@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :user do
     username "MyString"
-    email "MyText"
+    email { Faker::Internet.email }
     bio "MyText"
   end
 end
