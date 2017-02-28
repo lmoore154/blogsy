@@ -31,6 +31,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.0'
   gem 'faker'
   gem 'shoulda'
+  gem 'active_model_serializers', '~> 0.10.0'
 end
 
 group :development do

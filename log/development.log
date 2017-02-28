@@ -1,0 +1,1165 @@
+Started GET "/users" for ::1 at 2017-02-28 13:26:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (6.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.8ms)
+
+
+  
+SyntaxError (/Users/rileyle/Documents/IronYard/week5/day2/blogsy/app/serializers/user_serializer.rb:6: syntax error, unexpected ':', expecting keyword_end):
+  
+app/serializers/user_serializer.rb:6: syntax error, unexpected ':', expecting keyword_end
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for ::1 at 2017-02-28 13:27:11 -0500
+Started GET "/users" for ::1 at 2017-02-28 13:27:21 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `key?' for :comments:Symbol):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:5:in `index'
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `key?' for :comments:Symbol):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for ::1 at 2017-02-28 13:28:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 4.4ms)
+
+
+  
+LoadError (Unable to autoload constant UserSerializer, expected /Users/rileyle/Documents/IronYard/week5/day2/blogsy/app/serializers/user_serializer.rb to define it):
+  
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for ::1 at 2017-02-28 13:28:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 24ms (Views: 14.8ms | ActiveRecord: 3.3ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/users" for ::1 at 2017-02-28 13:31:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 4.9ms)
+
+
+  
+NoMethodError (undefined method `key?' for :comments:Symbol):
+  
+app/serializers/user_serializer.rb:4:in `<class:UserSerializer>'
+app/serializers/user_serializer.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:5:in `index'
+Started GET "/users" for ::1 at 2017-02-28 13:32:24 -0500
+Started GET "/users" for ::1 at 2017-02-28 13:32:34 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.61ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.67ms)
+Completed 200 OK in 15ms (Views: 10.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-28 13:33:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.55ms)
+Completed 200 OK in 40ms (Views: 23.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:34:13 -0500
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={:id=>"2"}):
+  
+app/controllers/posts_controller.rb:14:in `comments'
+  [1m[36mComment Load (2.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (194.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_development"[0m
+  [1m[35m (189.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_test"[0m
+  [1m[35m (567.5ms)[0m  [1m[35mCREATE DATABASE "blogsy_development" ENCODING = 'unicode'[0m
+  [1m[35m (336.2ms)[0m  [1m[35mCREATE DATABASE "blogsy_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:36:21 UTC], ["updated_at", 2017-02-28 18:36:21 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:36:21 UTC], ["updated_at", 2017-02-28 18:36:21 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Bella"], ["email", "roger_farrell@fisherhoeger.com"], ["created_at", 2017-02-28 18:36:22 UTC], ["updated_at", 2017-02-28 18:36:22 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mother Night"], ["body", "[\"Esse cumque voluptatem ea in.\", \"Repudiandae qui porro saepe.\", \"Voluptates odit ut molestias magni commodi.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:36:22 UTC], ["updated_at", 2017-02-28 18:36:22 UTC]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (193.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_development"[0m
+  [1m[35m (184.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_test"[0m
+  [1m[35m (387.4ms)[0m  [1m[35mCREATE DATABASE "blogsy_development" ENCODING = 'unicode'[0m
+  [1m[35m (397.4ms)[0m  [1m[35mCREATE DATABASE "blogsy_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (22.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:36:55 UTC], ["updated_at", 2017-02-28 18:36:55 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:36:55 UTC], ["updated_at", 2017-02-28 18:36:55 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Angel"], ["email", "anderson@auer.com"], ["created_at", 2017-02-28 18:36:56 UTC], ["updated_at", 2017-02-28 18:36:56 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Many-Splendoured Thing"], ["body", "[\"Aut id vitae.\", \"Fugit aut animi qui.\", \"Eaque officia dolore labore.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:36:56 UTC], ["updated_at", 2017-02-28 18:36:56 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (193.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_development"[0m
+  [1m[35m (189.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_test"[0m
+  [1m[35m (391.5ms)[0m  [1m[35mCREATE DATABASE "blogsy_development" ENCODING = 'unicode'[0m
+  [1m[35m (393.4ms)[0m  [1m[35mCREATE DATABASE "blogsy_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:37:08 UTC], ["updated_at", 2017-02-28 18:37:08 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:37:08 UTC], ["updated_at", 2017-02-28 18:37:08 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Missy"], ["email", "earl@quitzonfeeney.io"], ["created_at", 2017-02-28 18:37:08 UTC], ["updated_at", 2017-02-28 18:37:08 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Paths of Glory"], ["body", "[\"Repudiandae dicta accusamus itaque reiciendis id.\", \"Inventore eum iusto tenetur voluptatum maiores.\", \"Quibusdam consectetur qui vel dolorum reiciendis.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:37:08 UTC], ["updated_at", 2017-02-28 18:37:08 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (193.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_development"[0m
+  [1m[35m (192.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_test"[0m
+  [1m[35m (408.4ms)[0m  [1m[35mCREATE DATABASE "blogsy_development" ENCODING = 'unicode'[0m
+  [1m[35m (393.4ms)[0m  [1m[35mCREATE DATABASE "blogsy_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Chloe"], ["email", "davin.bartell@gleasoncain.co"], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "As I Lay Dying"], ["body", "[\"Accusantium veniam id.\", \"Iure iusto quidem id.\", \"Ipsum minus deleniti repudiandae ducimus.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Now Sleeps the Crimson Petal"], ["body", "[\"Est iste ut iusto repellendus sunt.\", \"Nihil sequi quidem id.\", \"Veniam doloremque numquam suscipit autem.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jasper"], ["email", "alejandrin_okeefe@mcglynn.org"], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Those Barren Leaves, Thrones, Dominations"], ["body", "[\"Quia et fuga ullam.\", \"Vero aliquid expedita.\", \"Maiores dicta et non et ut.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Nectar in a Sieve"], ["body", "[\"Ratione nostrum ipsam.\", \"Autem accusamus eos recusandae nisi sequi.\", \"Totam nihil soluta et.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Nectar in a Sieve"], ["body", "[\"Aut omnis voluptate.\", \"Quaerat magni ea nulla provident dignissimos.\", \"Voluptatem sed similique iste ut.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Shadow"], ["email", "kadin_gottlieb@aufderhar.info"], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Bury My Heart at Wounded Knee"], ["body", "[\"Aut porro sint.\", \"Sapiente ipsa est qui eligendi aperiam iure.\", \"Voluptatibus et saepe possimus commodi aut et ipsa.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Wings of the Dove"], ["body", "[\"Pariatur ut consequatur assumenda tempore odio quae maiores.\", \"Non quae velit et rerum dolor illo.\", \"Quia ut cupiditate voluptate vitae sit placeat.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Soldier's Art"], ["body", "[\"Aut numquam eum libero recusandae.\", \"Et ut rerum voluptate tenetur ab nobis incidunt.\", \"Animi quia ut ratione nisi dolore.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Waiting for the Barbarians"], ["body", "[\"Quia molestiae explicabo et in et.\", \"Hic impedit nisi quo consequatur laboriosam.\", \"Est atque fugit rerum sed.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "To Your Scattered Bodies Go"], ["body", "[\"Commodi tempore voluptas perferendis voluptate.\", \"Beatae voluptas optio molestias.\", \"A nam voluptas quibusdam.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "His Dark Materials"], ["body", "[\"Maiores eum molestias omnis aut.\", \"Magni dolorem vero sint nesciunt.\", \"Harum error voluptatem suscipit vel.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "It's a Battlefield"], ["body", "[\"Aut eveniet tempore delectus omnis temporibus explicabo numquam.\", \"Aliquid esse officiis sed.\", \"Quod laborum modi repellat voluptates earum quas.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "It's a Battlefield"], ["body", "[\"Corporis tempore sit mollitia.\", \"Doloribus quia et possimus quasi eos provident commodi.\", \"Quod qui perspiciatis.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Simba"], ["email", "verda@metzjohnson.co"], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Things Fall Apart"], ["body", "[\"Commodi et natus a fugiat.\", \"Sunt minima ullam totam accusantium.\", \"Omnis et debitis non ea quos.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Little Foxes"], ["body", "[\"Alias eveniet odit.\", \"Ut et aut nihil veritatis velit et.\", \"Doloribus eum dicta praesentium placeat.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:38:15 UTC], ["updated_at", 2017-02-28 18:38:15 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Pale Kings and Princes"], ["body", "[\"Optio autem veritatis aperiam dolores earum.\", \"Modi nesciunt qui odio.\", \"Et dicta laboriosam aperiam aut reiciendis.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Daffodil Sky"], ["body", "[\"Numquam dolor quibusdam dignissimos est vel consectetur labore.\", \"Voluptas amet qui eum qui quo.\", \"Voluptatem veniam dicta rerum dolorem labore.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Lilies of the Field"], ["body", "[\"Illum aperiam aut sequi.\", \"Non aliquam laboriosam magni ut praesentium sint ipsam.\", \"Modi beatae repellat voluptate eos.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Bella"], ["email", "devonte_gutkowski@rennerhalvorson.com"], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Man Within"], ["body", "[\"Et tempora est laudantium voluptatem possimus et.\", \"Adipisci possimus impedit.\", \"Aliquam maiores cupiditate ut doloremque dolores pariatur.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Nine Coaches Waiting"], ["body", "[\"Aliquam veritatis consequatur beatae reiciendis et harum dignissimos.\", \"Et culpa omnis quasi et ut.\", \"Nemo voluptatem deserunt accusantium aperiam.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Fear and Trembling"], ["body", "[\"Omnis dolor velit natus perferendis et et.\", \"Nam id similique sunt maxime.\", \"Quos ipsam nisi.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Painted Veil"], ["body", "[\"Consequatur velit quis aperiam est.\", \"Optio corporis blanditiis et ut quibusdam.\", \"Cum qui ea aperiam odit totam.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "This Side of Paradise"], ["body", "[\"Et tenetur enim et hic voluptatem quos aperiam.\", \"Rerum facilis nesciunt aut omnis optio quibusdam consequatur.\", \"Enim minima ut nesciunt.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Way of All Flesh"], ["body", "[\"A officia harum dolores tempora enim cumque.\", \"Illum repellendus quam dolorem vitae est tenetur.\", \"Porro et molestiae.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:38:16 UTC], ["updated_at", 2017-02-28 18:38:16 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (190.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_development"[0m
+  [1m[35m (190.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_test"[0m
+  [1m[35m (403.3ms)[0m  [1m[35mCREATE DATABASE "blogsy_development" ENCODING = 'unicode'[0m
+  [1m[35m (403.7ms)[0m  [1m[35mCREATE DATABASE "blogsy_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:39:17 UTC], ["updated_at", 2017-02-28 18:39:17 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jasper"], ["email", "moses@rippin.co"], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "No Country for Old Men"], ["body", "[\"Qui maxime animi quidem tempora.\", \"Reprehenderit et numquam illo commodi vero.\", \"Ut explicabo autem repudiandae qui beatae illum.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Monstrous Regiment of Women"], ["body", "[\"Esse nostrum commodi numquam est in.\", \"Et unde qui ut molestiae ipsa laboriosam odio.\", \"Unde tenetur molestiae nihil nesciunt et.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "What's Become of Waring"], ["body", "[\"Et et distinctio soluta esse aut.\", \"Ad corporis cupiditate ut voluptas laudantium animi tenetur.\", \"Eos optio vel et.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Man Within"], ["body", "[\"Sunt ex sit aliquid.\", \"Inventore accusamus nemo.\", \"Suscipit natus impedit voluptates et accusamus nemo necessitatibus.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tiger! Tiger!"], ["body", "[\"Nemo tenetur dicta similique ut expedita aut.\", \"Quia voluptas aut aut.\", \"Facilis excepturi quisquam molestias reprehenderit.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "I Will Fear No Evil"], ["body", "[\"Reiciendis dicta temporibus.\", \"Iste occaecati doloremque ullam quod nisi adipisci a.\", \"Iusto quia voluptatem neque.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Moon by Night"], ["body", "[\"Optio in reprehenderit aperiam vero at.\", \"Est consequatur ut vitae cupiditate et nisi.\", \"Accusantium nemo incidunt in voluptas.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Jasper"], ["email", "rogelio.stiedemann@jast.biz"], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Down to a Sunless Sea"], ["body", "[\"Quia voluptas ut blanditiis explicabo fugit voluptate.\", \"Atque unde quia.\", \"Aut velit molestiae rerum incidunt occaecati corrupti.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Green Bay Tree"], ["body", "[\"Et voluptate amet ut.\", \"Nihil enim aut quis in officia necessitatibus accusamus.\", \"Ab magni harum qui dolore.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Way of All Flesh"], ["body", "[\"Sapiente rerum accusamus modi dolorem suscipit maiores qui.\", \"Sit tempora eum nihil iure dolores temporibus non.\", \"Ut veniam unde reiciendis eos consequatur sapiente.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sleep the Brave"], ["body", "[\"Assumenda qui dolores autem omnis.\", \"Cupiditate quia eligendi debitis repudiandae odit laudantium rerum.\", \"Magnam nobis soluta iusto quod labore.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Alone on a Wide, Wide Sea"], ["body", "[\"Dolor maxime eum sapiente iste.\", \"Eos ad veritatis aliquid voluptatem fuga cum in.\", \"Modi quae quis sint occaecati.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "To Sail Beyond the Sunset"], ["body", "[\"Dolores esse quia nemo doloribus ab.\", \"Omnis optio minus quo quod rerum et omnis.\", \"Et quo aut velit eveniet ut.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Milo"], ["email", "alene_stehr@yost.biz"], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Nectar in a Sieve"], ["body", "[\"Sunt non voluptas aut quia est.\", \"Sunt rerum labore necessitatibus.\", \"Hic libero minima odio.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Dulce et Decorum Est"], ["body", "[\"Possimus corporis tempore rerum culpa.\", \"Deserunt quo magnam eum voluptatum eaque omnis.\", \"Sapiente expedita totam perferendis.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The House of Mirth"], ["body", "[\"Dolores praesentium et qui est et sed.\", \"Tempore dolor provident eius enim.\", \"Iste eum rerum omnis repellendus deleniti.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Beneath the Bleeding"], ["body", "[\"Qui illum ut quia et repudiandae nobis optio.\", \"Nihil dolor amet sed molestias rerum labore.\", \"Vel blanditiis deleniti rerum et nemo neque.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Lucy"], ["email", "alisha.emard@hyatt.co"], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Monstrous Regiment of Women"], ["body", "[\"Iure eligendi provident et quaerat.\", \"Tenetur mollitia hic qui aut.\", \"Aut fuga exercitationem tempore asperiores.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Handful of Dust"], ["body", "[\"Qui maiores repudiandae.\", \"Ab aperiam qui quisquam consequatur maiores doloribus.\", \"A veritatis aspernatur voluptatibus.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Missy"], ["email", "gordon@torphy.info"], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Bury My Heart at Wounded Knee"], ["body", "[\"Doloremque vero dolores voluptas ipsum iure.\", \"Possimus et non aut ad.\", \"Porro maiores quaerat delectus ipsa culpa error sint.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Time To Murder And Create"], ["body", "[\"Sed error non dolores et.\", \"Molestiae non suscipit ut velit.\", \"Nesciunt et doloribus omnis sed.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Lathe of Heaven"], ["body", "[\"Quia alias fugiat non.\", \"Rerum eius consequatur id.\", \"Explicabo eos autem sed.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "An Acceptable Time"], ["body", "[\"Et consequatur temporibus sed voluptas aut quia placeat.\", \"Reiciendis fuga veritatis dolores.\", \"Voluptatem dolores sed necessitatibus delectus sed.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Great Work of Time"], ["body", "[\"Et veniam accusamus culpa.\", \"Et facere rerum vel et ex.\", \"Animi sed voluptatem.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Françoise Sagan"], ["body", "[\"Non velit beatae officiis aut dolores rerum.\", \"Illo exercitationem non corporis incidunt quos.\", \"Neque deleniti dolores ut ut.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Alone on a Wide, Wide Sea"], ["body", "[\"Ut repellendus omnis.\", \"Reprehenderit hic rerum maxime facere sunt.\", \"Est cumque laudantium et perferendis eum iste velit.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:18 UTC], ["updated_at", 2017-02-28 18:39:18 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (188.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_development"[0m
+  [1m[35m (176.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "blogsy_test"[0m
+  [1m[35m (398.8ms)[0m  [1m[35mCREATE DATABASE "blogsy_development" ENCODING = 'unicode'[0m
+  [1m[35m (413.0ms)[0m  [1m[35mCREATE DATABASE "blogsy_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "comments" ("id" serial primary key, "body" text, "user_id" integer, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "user_id" integer, "summary" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "comments_count" integer)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "email" text, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "posts_count" integer)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170227184312')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170227173115'),
+('20170227173152'),
+('20170227181103'),
+('20170227183307');
+
+[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Oliver"], ["email", "alana@collinshane.biz"], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Tiger! Tiger!"], ["body", "[\"Voluptatum commodi et sunt quia.\", \"Voluptates excepturi illum voluptas sapiente quia.\", \"Omnis quos eius.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Moon by Night"], ["body", "[\"Sunt consequatur omnis autem maiores.\", \"Inventore sunt expedita omnis necessitatibus beatae molestiae porro.\", \"Asperiores neque minus dolor quaerat non.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "East of Eden"], ["body", "[\"Deleniti et quod beatae.\", \"Eum assumenda aperiam debitis.\", \"Esse nihil et dolor illo.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Way of All Flesh"], ["body", "[\"Suscipit consequuntur quis accusamus vel repudiandae.\", \"Eos deserunt ullam.\", \"Eos ducimus eaque.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Darkling Plain"], ["body", "[\"Amet ea velit similique est rerum enim.\", \"Distinctio voluptate blanditiis in aut quo in necessitatibus.\", \"Ex recusandae animi sunt.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Stars' Tennis Balls"], ["body", "[\"Veniam ut ut quod incidunt enim non beatae.\", \"Totam qui dolore aut dolorem.\", \"Magni ad sed sit odio.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Time of Gifts"], ["body", "[\"Temporibus eum est odio porro omnis qui.\", \"Minus quaerat ex voluptate vitae distinctio officiis veritatis.\", \"Sapiente officiis provident incidunt.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "A Farewell to Arms"], ["body", "[\"Voluptas soluta in voluptatem ducimus.\", \"Sequi quam dignissimos suscipit voluptatem laboriosam similique commodi.\", \"Suscipit aut aut fugit atque est repellendus et.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Alone on a Wide, Wide Sea"], ["body", "[\"Consequatur nostrum nihil et sapiente vero.\", \"In exercitationem sint occaecati voluptatem et.\", \"Et rerum et eum non.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "After Many a Summer Dies the Swan"], ["body", "[\"Ea et odit nostrum excepturi quibusdam.\", \"Accusamus sit sunt.\", \"Consequatur reiciendis et.\"]"], ["user_id", 1], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Angel"], ["email", "emory_ondricka@pfeffer.net"], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Number the Stars"], ["body", "[\"Rem quam adipisci dolore.\", \"Quis amet molestiae impedit animi cumque.\", \"Repudiandae aliquid aut accusamus.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Last Temptation"], ["body", "[\"Aspernatur ut accusamus laudantium.\", \"Molestiae debitis rerum quo facilis.\", \"Tempore deserunt qui harum voluptate et laborum.\"]"], ["user_id", 2], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Oliver"], ["email", "sierra@hauck.net"], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Skull Beneath the Skin"], ["body", "[\"Ut reprehenderit fugit qui.\", \"Voluptatem optio distinctio dolores nobis sunt cumque eaque.\", \"Quos ut ipsum.\"]"], ["user_id", 3], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Felix"], ["email", "ahmed@hagenesjerde.co"], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Look to Windward"], ["body", "[\"Aut incidunt eos dolor quas et voluptas consequatur.\", \"Et quia veniam molestias autem.\", \"Natus itaque quia ut non distinctio.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Curious Incident of the Dog in the Night-Time"], ["body", "[\"Qui enim et quibusdam esse placeat alias quis.\", \"Dignissimos voluptas veritatis fugit dicta.\", \"Ipsa praesentium doloribus error.\"]"], ["user_id", 4], ["created_at", 2017-02-28 18:39:34 UTC], ["updated_at", 2017-02-28 18:39:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "Oscar"], ["email", "otha.morar@metz.info"], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Some Buried Caesar"], ["body", "[\"Accusamus et illo nulla incidunt exercitationem.\", \"Expedita porro aut veritatis aut voluptate.\", \"Eum dolor officia est repellendus.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Mermaids Singing"], ["body", "[\"Culpa ipsam quo rerum voluptatem nihil quas commodi.\", \"At natus sunt ex illum in.\", \"Ut excepturi atque.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Mirror Crack'd from Side to Side"], ["body", "[\"Commodi sit et.\", \"Ratione iure et nostrum ut nulla possimus.\", \"Quo qui voluptatem amet quas magni eveniet.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Number the Stars"], ["body", "[\"Explicabo vitae officiis est nam.\", \"Aut omnis molestias corporis.\", \"Ut ab molestias maxime vel voluptatem.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Sleep the Brave"], ["body", "[\"Non numquam animi architecto ab possimus enim.\", \"Minima repudiandae nisi eos maiores et.\", \"Et qui error magnam voluptatem non laboriosam sed.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Blood's a Rover"], ["body", "[\"In nam ipsum animi omnis.\", \"Consequuntur quas ut aut molestiae ipsum.\", \"Id aliquam voluptas beatae laudantium odio.\"]"], ["user_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "posts_count" = COALESCE("posts_count", 0) + 1 WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It is the unknown we fear when we look upon death and darkness, nothing more."], ["post_id", 1], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "After all this time? Always."], ["post_id", 1], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "No story lives unless someone wants to listen. The stories we love best do live in us forever. So whether you come back by page or by the big screen, Hogwarts will always be there to welcome you home."], ["post_id", 1], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You're a wizard, Harry."], ["post_id", 2], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "After all this time? Always."], ["post_id", 2], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It is the unknown we fear when we look upon death and darkness, nothing more."], ["post_id", 3], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Just because you have the emotional range of a teaspoon doesn’t mean we all have."], ["post_id", 3], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 3], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You sort of start thinking anything’s possible if you’ve got enough nerve."], ["post_id", 4], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It is the unknown we fear when we look upon death and darkness, nothing more."], ["post_id", 4], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You're a wizard, Harry."], ["post_id", 4], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Words are in my not-so-humble opinion, the most inexhaustible form of magic we have, capable both of inflicting injury and remedying it."], ["post_id", 4], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 4], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "I solemnly swear I am up to no good."], ["post_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Words are in my not-so-humble opinion, the most inexhaustible form of magic we have, capable both of inflicting injury and remedying it."], ["post_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Happiness can be found even in the darkest of times if only one remembers to turn on the light."], ["post_id", 5], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 6], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "I solemnly swear I am up to no good."], ["post_id", 7], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "No story lives unless someone wants to listen. The stories we love best do live in us forever. So whether you come back by page or by the big screen, Hogwarts will always be there to welcome you home."], ["post_id", 7], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It is our choices, Harry, that show what we truly are, far more than our abilities."], ["post_id", 7], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We could all have been killed - or worse, expelled."], ["post_id", 8], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Dark and difficult times lie ahead. Soon we must all face the choice between what is right and what is easy."], ["post_id", 8], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "After all this time? Always."], ["post_id", 8], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Just because you have the emotional range of a teaspoon doesn’t mean we all have."], ["post_id", 8], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "I solemnly swear I am up to no good."], ["post_id", 8], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We could all have been killed - or worse, expelled."], ["post_id", 9], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We could all have been killed - or worse, expelled."], ["post_id", 9], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Words are in my not-so-humble opinion, the most inexhaustible form of magic we have, capable both of inflicting injury and remedying it."], ["post_id", 9], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It’s wingardium leviOsa, not leviosAH."], ["post_id", 10], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Happiness can be found even in the darkest of times if only one remembers to turn on the light."], ["post_id", 10], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Dark and difficult times lie ahead. Soon we must all face the choice between what is right and what is easy."], ["post_id", 10], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It’s wingardium leviOsa, not leviosAH."], ["post_id", 10], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Of course it is happening inside your head, Harry, but why on Earth should that mean that it is not real?"], ["post_id", 10], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Dark and difficult times lie ahead. Soon we must all face the choice between what is right and what is easy."], ["post_id", 11], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Things we lose have a way of coming back to us in the end, if not always in the way we expect."], ["post_id", 11], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?"], ["post_id", 11], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You're a wizard, Harry."], ["post_id", 11], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals."], ["post_id", 11], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It is our choices, Harry, that show what we truly are, far more than our abilities."], ["post_id", 12], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Happiness can be found even in the darkest of times if only one remembers to turn on the light."], ["post_id", 12], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Never trust anything that can think for itself if you can't see where it keeps its brain."], ["post_id", 12], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals."], ["post_id", 12], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 12], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We could all have been killed - or worse, expelled."], ["post_id", 13], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "After all this time? Always."], ["post_id", 13], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "No story lives unless someone wants to listen. The stories we love best do live in us forever. So whether you come back by page or by the big screen, Hogwarts will always be there to welcome you home."], ["post_id", 13], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 13], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We could all have been killed - or worse, expelled."], ["post_id", 13], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Never trust anything that can think for itself if you can't see where it keeps its brain."], ["post_id", 14], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You're a wizard, Harry."], ["post_id", 14], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are."], ["post_id", 14], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Words are in my not-so-humble opinion, the most inexhaustible form of magic we have, capable both of inflicting injury and remedying it."], ["post_id", 15], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You're a wizard, Harry."], ["post_id", 16], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It is the unknown we fear when we look upon death and darkness, nothing more."], ["post_id", 16], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals."], ["post_id", 16], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "To the well-organized mind, death is but the next great adventure."], ["post_id", 17], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We could all have been killed - or worse, expelled."], ["post_id", 18], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Things we lose have a way of coming back to us in the end, if not always in the way we expect."], ["post_id", 18], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends."], ["post_id", 18], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It’s wingardium leviOsa, not leviosAH."], ["post_id", 18], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "We’ve all got both light and dark inside us. What matters is the part we choose to act on. That’s who we really are."], ["post_id", 19], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "If you want to know what a man’s like, take a good look at how he treats his inferiors, not his equals."], ["post_id", 19], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Harry, suffering like this proves you are still a man! This pain is part of being human … the fact that you can feel pain like this is your greatest strength."], ["post_id", 19], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You sort of start thinking anything’s possible if you’ve got enough nerve."], ["post_id", 19], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Words are in my not-so-humble opinion, the most inexhaustible form of magic we have, capable both of inflicting injury and remedying it."], ["post_id", 19], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?"], ["post_id", 20], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "I solemnly swear I am up to no good."], ["post_id", 20], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Harry, suffering like this proves you are still a man! This pain is part of being human … the fact that you can feel pain like this is your greatest strength."], ["post_id", 20], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Never trust anything that can think for itself if you can't see where it keeps its brain."], ["post_id", 21], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "It’s wingardium leviOsa, not leviosAH."], ["post_id", 21], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Just because you have the emotional range of a teaspoon doesn’t mean we all have."], ["post_id", 21], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "You're a wizard, Harry."], ["post_id", 21], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "Harry, suffering like this proves you are still a man! This pain is part of being human … the fact that you can feel pain like this is your greatest strength."], ["post_id", 21], ["created_at", 2017-02-28 18:39:35 UTC], ["updated_at", 2017-02-28 18:39:35 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "comments_count" = COALESCE("comments_count", 0) + 1 WHERE "posts"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:40:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 21ms (ActiveRecord: 3.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={:id=>"2"}):
+  
+app/controllers/posts_controller.rb:14:in `comments'
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:40:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 4.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={:id=>"2"}):
+  
+app/controllers/posts_controller.rb:14:in `comments'
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:41:21 -0500
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:41:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 4.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={:id=>"2"}):
+  
+app/controllers/posts_controller.rb:14:in `comments'
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:42:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 21ms (ActiveRecord: 3.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'={:id=>"2"}):
+  
+app/controllers/posts_controller.rb:14:in `comments'
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:42:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+No serializer found for resource: #<Comment id: 4, body: "You're a wizard, Harry.", user_id: nil, post_id: 2, created_at: "2017-02-28 18:39:35", updated_at: "2017-02-28 18:39:35">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Comment::ActiveRecord_Associations_CollectionProxy (0.97ms)
+Completed 200 OK in 63ms (Views: 18.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:44:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 60ms (Views: 19.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:44:43 -0500
+Started GET "/posts/2/comments" for ::1 at 2017-02-28 13:44:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#comments as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.46ms)
+Completed 200 OK in 63ms (Views: 18.7ms | ActiveRecord: 6.1ms)
+
+
