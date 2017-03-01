@@ -11,8 +11,8 @@ class PostsController < ApplicationController
   end
 
   def comments
-    @posts = Post.find(params[:id]).posts
-    render json: @posts
+    @comments = Post.find(params[:id]).comments
+    render json: @comments
   end
 
   def destroy
