@@ -2440,3 +2440,46 @@ Processing by UsersController#index as */*
 Completed 200 OK in 31ms (Views: 18.7ms | ActiveRecord: 5.2ms)
 
 
+Started GET "/users" for ::1 at 2017-02-28 23:13:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.07ms)
+Completed 200 OK in 27ms (Views: 16.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users" for ::1 at 2017-02-28 23:13:57 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.98ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2017-02-28 23:14:04 -0500
+Processing by UsersController#create as */*
+  Parameters: {"text/plain"=>["comment"]}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:26:in `user_params'
+app/controllers/users_controller.rb:9:in `create'
+Started POST "/users?user[username]=name&user[email]=email@email.com" for ::1 at 2017-02-28 23:17:08 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"name", "email"=>"email@email.com"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "api_token") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "name"], ["email", "email@email.com"], ["created_at", 2017-03-01 04:17:08 UTC], ["updated_at", 2017-03-01 04:17:08 UTC], ["api_token", "BRrRPH87kN21ViGGSkhH8mpQ"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered UserApiTokenSerializer with ActiveModelSerializers::Adapter::Attributes (0.3ms)
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for ::1 at 2017-02-28 23:17:25 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.31ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
