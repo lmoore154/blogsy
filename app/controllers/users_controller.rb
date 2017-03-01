@@ -14,6 +14,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def posts
+    @user = User.find(params[:id])
+    render json: @user.posts
 
 
   private
