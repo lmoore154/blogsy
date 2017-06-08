@@ -16,5 +16,13 @@
         body: Faker::Lorem.sentences
         )
     end
+end
 
+posts = Post.all
+posts.each do |post|
+  rand(1..5).times do
+    post.comments.create!(
+      body: Faker::HarryPotter.quote
+    )
+  end
 end
